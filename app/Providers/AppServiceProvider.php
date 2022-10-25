@@ -30,3 +30,4 @@ class AppServiceProvider extends ServiceProvider
             $url->formatScheme('https://');
     }
 }
+}
