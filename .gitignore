@@ -1,3 +1,4 @@
+/node_modules
 # ignore log files and databases
 *.log
 *.sql
@@ -70,8 +71,6 @@ _old/
 .profile
 .bashrc
 .bash_logout
-.bash_history
-.modgit/
 .modman/
 pkginfo
 nohup.out
@@ -85,4 +84,3 @@ Homestead.json
 /public/.htaccess
 /storage
 storage/*.key
-node_modules
