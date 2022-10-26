@@ -1,15 +1,15 @@
-# ignore log files and databases
+
 *.log
 *.sql
 *.sqlite
-# ignore compiled files
+
 *.com
 *.class
 *.dll
 *.exe
 *.o
 *.so
-# ignore packaged files
+
 *.7z
 *.dmg
 *.gz
@@ -18,7 +18,7 @@
 *.rar
 *.tar
 *.zip
-# ignore OS generated files
+
 ehthumbs.db
 Thumbs.db
 .DS_Store
@@ -26,23 +26,23 @@ Thumbs.db
 ._*
 .Spotlight-V100
 .Trashes
-# ignore Editor files
+
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
 _ide_helper.php
 /.idea
 /.vscode
-# Eclipse project files
+
 .buildpath
 .project
 .settings/
-# Ignore cache
+
 .cache/
-# Ignore user created files :)
+
 *.bak
 *.orig
-# Ignore system files
+
 .bash_history
 LICENSE_AFL.txt
 LICENSE.html
@@ -79,7 +79,7 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
-#Laravel Specific files
+
 /vendor
 .env
 /public/.htaccess
