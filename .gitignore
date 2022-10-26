@@ -1,16 +1,3 @@
-/node_modules
-/public/hot
-/public/storage
-# /storage/*.key
-/vendor
-.env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-
 # ignore log files and databases
 *.log
 *.sql
@@ -98,3 +85,4 @@ Homestead.json
 /public/.htaccess
 /storage
 storage/*.key
+node_modules
