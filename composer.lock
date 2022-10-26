@@ -21,7 +21,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0",
+                "php": "^7.2",
                 "symfony/http-foundation": "^4|^5|^6",
                 "symfony/http-kernel": "^4|^5|^6"
             },
@@ -78,7 +78,7 @@
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
@@ -137,7 +137,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^9",
@@ -228,7 +228,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^9.0",
@@ -304,7 +304,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0|^8.0"
+                "php": "^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.4|^7.0|^8.0|^9.0"
@@ -576,7 +576,7 @@
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.5",
                 "guzzlehttp/psr7": "^1.9 || ^2.4",
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
             },
@@ -785,7 +785,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0",
                 "ralouphie/getallheaders": "^3.0"
@@ -915,7 +915,7 @@
                 "monolog/monolog": "^2.0",
                 "nesbot/carbon": "^2.31",
                 "opis/closure": "^3.6",
-                "php": "^7.2.5|^8.0",
+                "php": "^7.2.5",
                 "psr/container": "^1.0",
                 "psr/simple-cache": "^1.0",
                 "ramsey/uuid": "^3.7|^4.0",
@@ -1069,7 +1069,7 @@
                 "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
                 "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
                 "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-                "php": "^7.2.5|^8.0",
+                "php": "^7.2.5",
                 "psy/psysh": "^0.10.4|^0.11.1",
                 "symfony/var-dumper": "^4.3.4|^5.0|^6.0"
             },
@@ -1137,7 +1137,7 @@
                 "illuminate/console": "^7.0",
                 "illuminate/filesystem": "^7.0",
                 "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
+                "php": "^7.2.5"
             },
             "type": "library",
             "extra": {
@@ -1262,7 +1262,7 @@
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1"
             },
             "conflict": {
                 "scrutinizer/ocular": "1.7.*"
@@ -1356,7 +1356,7 @@
             "require": {
                 "ext-fileinfo": "*",
                 "league/mime-type-detection": "^1.3",
-                "php": "^7.2.5 || ^8.0"
+                "php": "^7.2.5"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
@@ -1449,7 +1449,7 @@
             },
             "require": {
                 "ext-fileinfo": "*",
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.2",
@@ -1607,7 +1607,7 @@
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.1.8 || ^8.0",
+                "php": "^7.1.8",
                 "symfony/polyfill-mbstring": "^1.0",
                 "symfony/polyfill-php80": "^1.16",
                 "symfony/translation": "^3.4 || ^4.0 || ^5.0 || ^6.0"
