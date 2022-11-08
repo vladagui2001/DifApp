@@ -25,6 +25,7 @@
                 <p class="card-text"><b>Discapacidad:</b> {{$Difregister->Nomdiscap}}</p>
                 <p class="card-text"><b>Ingresos Mensuales:</b> {{$Difregister->Ing_Men}}</p>
                 <p class="card-text"><b>Apoyo Solicitado:</b> {{$Difregister->Nom_Apoyo}}</p>
+                <p class="card-text"><b>Estatus de solicitud:</b> {{$Difregister->Status}}</p>
                 <a href="/Users/{{$Difregister->id}}/edit" class="btn btn-dif">
                 Editar </a>
                 <a href="/Users/delete/{{$Difregister->id}}" class="btn btn-dark">

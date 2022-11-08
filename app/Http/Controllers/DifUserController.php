@@ -105,6 +105,7 @@ class DifUserController extends Controller
         $User->Nomdiscap=$request->input('Nomdiscap');
         $User->Ing_Men=$request->input('Ing_Men');
         $User->Nom_Apoyo = $request['NomApoyo'];
+        $User->Status=$request->input('Status');
 
         $input = $request->all();
         $User->update($input);

@@ -145,5 +145,11 @@ class DifUserAdminController extends Controller
         }
             else {return 'El usuario'.$Username. "No se pudo borrar";}
     }
+    public function mostrar(Difuserlogin $RegUser)
+    {
+        //Añadido el 05-10-22 
+        $RegUser=Difuserlogin::all();
+        return view("RegisterUsers/RegUsmostrar",compact('RegUser'));//
+    }
     
 }

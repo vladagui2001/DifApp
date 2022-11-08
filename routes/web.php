@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::resource("Users","DifUserController");
 Route::resource("RegUser","DifUserAdminController");
@@ -30,6 +30,8 @@ Route::get('RegUser/delete/{id}','DifUserAdminController@destroy');
 //Añadido el 06-11-22
 Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'mostraruser'));
 Route::get('Users/create', array('uses' =>'DifUserController@create', 'as' => 'users.create'));
+Route::get('RegUsmostrar', array('uses' =>'DifUserAdminController@mostrar', 'as' => 'mostrarReguser'));
+Route::get('/', array('uses' =>'DifUserController@index', 'as' => '/'));
 Auth::routes();
 
 
