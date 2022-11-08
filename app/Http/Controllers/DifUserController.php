@@ -17,7 +17,7 @@ class DifUserController extends Controller
     {
         // añadido el 10-10-2022
         $User=Difregister::all();
-        return view ('mostraruser',compact('User'));
+        return view ('index',compact('User'));
     }
 
     /**
@@ -58,7 +58,7 @@ class DifUserController extends Controller
             $User->Nom_Apoyo = $request['NomApoyo'];
             //Imagen
             $User->save();
-            return redirect('Users');
+            return redirect('Users')->with('message', 'Operación Exitosa');
     }
     /**
      * Display the specified resource.
@@ -108,7 +108,7 @@ class DifUserController extends Controller
 
         $input = $request->all();
         $User->update($input);
-        return redirect('Users');
+        return redirect('Users')->with('message', 'Operación Exitosa');
     }
 
     /**
@@ -137,9 +137,15 @@ class DifUserController extends Controller
 
         if ($User->delete($id)){
             //return 'El'.$id. "Si se pudo borrar";
-            return redirect('Users');
+            return redirect('Users')->with('message', 'Operación Exitosa');
         }
             else {return 'El beneficiario'.$Nombre. "No se pudo borrar";}
+    }
+    public function mostrar(Difregister $User)
+    {
+        //Añadido el 05-10-22 
+        $User=Difregister::all();
+        return view("mostraruser",compact('User'));//
     }
 
 ///Funciones Extra

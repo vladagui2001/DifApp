@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Users Create')
+@section('title', 'DifCreate')
 @section('content')
 
 <!-- <script src="C:/xampp/htdocs/ProjectoRealDifApp/DifApp/resources/js/create.js"></script> -->
@@ -7,10 +7,10 @@
     @csrf
         <div clas='form-group'>
             <label for=''>Nombre Completo:</label>
-            <input type='text'name="Nombre" class='form-control'> <br>
+            <input type='text'name="Nombre" class='form-control' maxlength="100"> <br>
 
             <label for=''>CURP:</label>
-            <input type='text'name="Curp" class='form-control'> <br>
+            <input type='text'name="Curp" class='form-control' maxlength="18"> <br>
 
             <div class="Genero">
                 <label for=''>Género:</label> <br>
@@ -20,7 +20,7 @@
             </div><br>
 
             <label for=''>Número de Hijos:</label>
-            <input type='text'name="NoDeHijos" class='form-control'> <br>
+            <input type='text'name="NoDeHijos" class='form-control' maxlength="2"> <br>
 
             <div class="Discap">
             <label for=''>¿Tiene alguna discapacidad?</label> <br>
@@ -29,10 +29,10 @@
             </div><br>
 
             <label for=''>¿Que discapacidad tiene? (Si aplica):</label>
-            <input type='text'name="Nomdiscap" class='form-control'> <br>
+            <input type='text'name="Nomdiscap" class='form-control' maxlength="50"> <br>
 
             <label for=''>¿Cuál es su ingreso mensual?:</label>
-            <input type='text'name="Ing_Men" class='form-control'> <br>
+            <input type='text'name="Ing_Men" class='form-control' maxlength="6"> <br>
              
             <div class="NomApoyo">
             <label for=''>Apoyo que desea solicitar:</label> <br>
@@ -42,8 +42,9 @@
             </div><br>
 
         </div>
-        <button type='submit'class='btn btn-primary'>
+        <button type='submit'class='btn btn-dif'>
         Guardar</button>
 </form>
+
 @endsection
 

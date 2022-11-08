@@ -61,7 +61,7 @@ class DifUserAdminController extends Controller
             //Imagen
             $RegUser->Avatar=$Nombre;
             $RegUser->save();
-            return redirect('RegUser');
+            return redirect('Users')->with('message', 'Operación Exitosa');
         }
     }
 
@@ -107,7 +107,7 @@ class DifUserAdminController extends Controller
         $file->move(public_path(  ).'/images',$Nombre);
         }   
         $RegUser->save();
-        return redirect('RegUser');
+        return redirect('Users')->with('message', 'Operación Exitosa');
     }
 
     /**
@@ -141,7 +141,7 @@ class DifUserAdminController extends Controller
 
         if ($RegUser->delete($id)){
             //return 'El'.$id. "Si se pudo borrar";
-            return redirect('RegUser');
+            return redirect('Users')->with('message', 'Operación Exitosa');
         }
             else {return 'El usuario'.$Username. "No se pudo borrar";}
     }

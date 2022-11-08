@@ -1,9 +1,18 @@
-@extends('layouts.app')
+@include('layouts.app')
 @section('title','Difregister')
 @section('content')
-    <div class="col-sm">
-        <div class="card text-center" style="width: 18rem; margin-top: 70px;">
-        <button type="button" onclick="window.location='{{ route("users.mostraruser") }}'">Beneficiarios</button>
-        <button type="button" onclick="window.location='{{ route("RegUser.index") }}'">Usuarios</button>
-        </div>
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
     </div>
+@endif
+<form method="POST" enctype="multipart/form-data">
+    @csrf
+    <div class="col-sm" style="width: 18rem; margin-top: 200px;">
+        <img src='recursos/Solicitudboton.png' class='btn' onclick="window.location='{{ route("users.create") }}'">
+        <img src='recursos/Estatusboton.png' class='btn' onclick="window.location='{{ route("mostraruser") }}'">
+    </div>
+</form>
+
+
+    

@@ -39,7 +39,8 @@
                 <label><input name="NomApoyo" type="radio" value="CincoAños">Menores de 5 años</label>
                 <label><input name="NomApoyo" type="radio" value="PersonasDiscp">Personas con Discapacidad</label>
             </div><br>
-
+            <label for=''>NOTA: Antes de guardar sus cambios es necesario que
+                vuelva a seleccionar el Género, Discapacidad y Apoyo que solicita.</label>
         </div>
         <button type='submit'class='btn btn-secondary'>
         Guardar Cambios</button>

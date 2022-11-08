@@ -2,6 +2,12 @@
 @section('title', 'Register User Create')
 @section('content')
 
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+@endif
+
 <!-- <script src="C:/xampp/htdocs/ProjectoRealDifApp/DifApp/resources/js/create.js"></script> -->
 <form class="form-group" method="POST" action="/RegUser" enctype="multipart/form-data">
     @csrf

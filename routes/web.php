@@ -19,19 +19,21 @@ Route::get('/', function () {
 Route::resource("Users","DifUserController");
 Route::resource("RegUser","DifUserAdminController");
 
+//Rutas de User
 Route::get("Users/create","DifUserController@create");
-Route::get("RegUser/create","DifUserAdminController@create");
-
-Route::get('Users/mostraruser', array('uses' =>'DifUserController@index', 'as' => 'users.mostraruser'));
-
 Route::get('Users/delete/{id}','DifUserController@destroy');
-Auth::routes();
 
+//Rutas de RegUser
+Route::get("RegUser/create","DifUserAdminController@create");
 Route::get('RegUser/delete/{id}','DifUserAdminController@destroy');
+
+//Añadido el 06-11-22
+Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'mostraruser'));
+Route::get('Users/create', array('uses' =>'DifUserController@create', 'as' => 'users.create'));
 Auth::routes();
 
 
-//Añadido el 29-09-22
+
 
 
 
