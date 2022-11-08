@@ -56,7 +56,7 @@
                                 <a class="nav-link" href="{{ route('mostrarReguser') }}">{{ __('Configurar Usuarios') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('mostrarReguser') }}">{{ __('Encuesta de Satisfacción') }}</a>
+                                <a class="nav-link" href="{{ route('EncuestaDif') }}">{{ __('Encuesta de Satisfacción') }}</a>
                             </li>
                     </ul>
                 </div>

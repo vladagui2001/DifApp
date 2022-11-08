@@ -13,13 +13,13 @@
     @csrf
         <div clas='form-group'>
             <label for=''>Nombre:</label>
-            <input type='text'name="Nombre" class='form-control'> <br>
+            <input type='text'name="Nombre" class='form-control' maxlength="100"> <br>
 
             <label for=''>Nombre de Usuario:</label>
-            <input type='text'name="Username" class='form-control'> <br>
+            <input type='text'name="Username" class='form-control' maxlength="100"> <br>
             
             <label for=''>CURP:</label>
-            <input type='text'name="Curp" class='form-control'> <br>
+            <input type='text'name="Curp" class='form-control' maxlength="18"> <br>
             
             <label for=''>Fecha de Nacimiento:</label>
             <input type='date' name="FechaNac" class='form-control'> <br>

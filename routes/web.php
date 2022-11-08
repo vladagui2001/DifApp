@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 Route::resource("Users","DifUserController");
 Route::resource("RegUser","DifUserAdminController");
+Route::resource("difEncuesta","DifEncController");
 
 //Rutas de User
 Route::get("Users/create","DifUserController@create");
@@ -32,6 +33,7 @@ Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'm
 Route::get('Users/create', array('uses' =>'DifUserController@create', 'as' => 'users.create'));
 Route::get('RegUsmostrar', array('uses' =>'DifUserAdminController@mostrar', 'as' => 'mostrarReguser'));
 Route::get('/', array('uses' =>'DifUserController@index', 'as' => '/'));
+Route::get('EncuestaDif', array('uses' =>'DifEncController@index', 'as' => 'EncuestaDif'));
 Auth::routes();
 
 
