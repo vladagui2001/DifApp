@@ -14,8 +14,6 @@ class DifEncController extends Controller
      */
     public function index()
     {
-        $difEncuesta=DifEncuesta::all();
-        return view ('EncuestasView/Encuesta',compact('difEncuesta'));
     }
 
     /**
@@ -25,7 +23,7 @@ class DifEncController extends Controller
      */
     public function create()
     {
-        //
+        return view ('EncuestasView/Encuesta');
     }
 
     /**

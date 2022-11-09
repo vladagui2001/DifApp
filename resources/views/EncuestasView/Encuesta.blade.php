@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- <script src="C:/xampp/htdocs/ProjectoRealDifApp/DifApp/resources/js/create.js"></script> -->
-<form class="form-group" method="POST" action="/Users" enctype="multipart/form-data">
+<form class="form-group" method="POST" action="/difEncuesta" enctype="multipart/form-data">
     @csrf
         <div clas='form-group'>
             <label for=''>Nombre del encuestador</label>
@@ -39,7 +39,7 @@
                 <label><input name="Pregunta2" type="radio" value="10">10</label>
             </div><br>
 
-            <label for=''>3.- El sistema es fácil de utilizar</label>
+            <label for=''>3.- El sistema registra de forma rápida al beneficiario</label>
             <div class="Pregunta3">
                 <label><input name="Pregunta3" type="radio" value="1">1</label>
                 <label><input name="Pregunta3" type="radio" value="2">2</label>
@@ -53,7 +53,7 @@
                 <label><input name="Pregunta3" type="radio" value="10">10</label>
             </div><br>
 
-            <label for=''>4.- El sistema no presenta errores </label>
+            <label for=''>4.- El sistema no presenta interrupciones en el proceso de registro</label>
             <div class="Pregunta4">
                 <label><input name="Pregunta4" type="radio" value="1">1</label>
                 <label><input name="Pregunta4" type="radio" value="2">2</label>
@@ -67,7 +67,7 @@
                 <label><input name="Pregunta4" type="radio" value="10">10</label>
             </div><br>
 
-            <label for=''>5.- La creación de usuarios y beneficiarios es satisfactoria</label>
+            <label for=''>5.- La consulta de datos de beneficiarios es satisfactoria</label>
             <div class="Pregunta5">
                 <label><input name="Pregunta5" type="radio" value="1">1</label>
                 <label><input name="Pregunta5" type="radio" value="2">2</label>
@@ -95,7 +95,7 @@
                 <label><input name="Pregunta6" type="radio" value="10">10</label>
             </div><br>
 
-            <label for=''>7.- Cuál es la Probabilidad de recomendar esta aplicación a otro personal</label>
+            <label for=''>7.- Cuál es la Probabilidad de recomendar esta aplicación al personal para el registro</label>
             <div class="Pregunta7">
                 <label><input name="Pregunta7" type="radio" value="1">1</label>
                 <label><input name="Pregunta7" type="radio" value="2">2</label>
@@ -109,7 +109,7 @@
                 <label><input name="Pregunta7" type="radio" value="10">10</label>
             </div><br>
 
-            <label for=''>8.- Satisfacción con el uso de la aplicación</label>
+            <label for=''>8.- En general, qué tan satisfecho se siente con la aplicación</label>
             <div class="Pregunta8">
                 <label><input name="Pregunta8" type="radio" value="1">1</label>
                 <label><input name="Pregunta8" type="radio" value="2">2</label>
