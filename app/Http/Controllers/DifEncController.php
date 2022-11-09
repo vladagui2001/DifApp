@@ -70,7 +70,8 @@ class DifEncController extends Controller
      */
     public function show(DifEncuesta $difEncuesta)
     {
-        //
+        $difEncuesta=DifEncuesta::all();
+        return view ('EncuestasView/Resultados',compact('difEncuesta'));
     }
 
     /**
