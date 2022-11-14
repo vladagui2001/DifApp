@@ -28,7 +28,7 @@ class DifUserController extends Controller
     public function create()
     {
         //Añadido el 05-10-22 
-        return view("create2");//
+        return view("create");//
     }
 
     /**
