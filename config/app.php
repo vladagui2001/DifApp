@@ -179,6 +179,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //Añadido el 15-11-22
+        Barryvdh\Debugbar\ServiceProvider::class,
+
     ],
 
     /*
@@ -235,6 +238,9 @@ return [
         'Html'=> Collective\Html\HtmlFacade::class,
 
         'PDF' => Barryvdh\DomPDF\Facade::class,
+
+        //Añadido el 15-11-22
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 
