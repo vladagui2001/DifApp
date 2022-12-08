@@ -24,6 +24,9 @@
             <label for=''>Fecha de Nacimiento:</label>
             <input type='date' name="FechaNac" class='form-control'> <br>
 
+            <label for=''>Contraseña:</label>
+            <input type='password' name="Password" class='form-control' maxlength="32"> <br>
+
             <div class="Genero">
                 <label for=''>Género:</label> <br>
                 <label><input name="Genero" type="radio" value="Hombre">Hombre</label>

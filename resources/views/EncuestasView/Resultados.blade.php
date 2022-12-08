@@ -12,8 +12,11 @@
 
     @csrf
     <h2 style="margin-left: 20px;"> Cómo sugerencia, puede presionar Ctrl + F para buscar a un usuario en específico </h2>
+    <a href="/difEncuesta/create" class="btn btn-dif">
+        Nueva encuesta </a>
     <a href="/EncuestasDownload" class="btn btn-dif">
         Descargar Resultados de las Encuestas </a>
+    
     <div class="row">
         <table class="table">
             <thead>

@@ -8,15 +8,15 @@
 @endif
 <form method="POST" enctype="multipart/form-data">
     @csrf
-    <div style="margin-top: 180px; margin-right: 80px;">
-        <img src='recursos/Estatusboton.png' class="float-right" onclick="window.location='{{ route("ResEncuestaDif") }}'">
+    <div style="margin-top: 100px; margin-right: 30px;">
+        <img src='recursos/Estatusboton.png' class="float-right" onclick="window.location='{{ route("EncuestaDif") }}'">
     </div>
-    <div style="margin-top: 180px; margin-left: 80px;">
+    <div style="margin-top: 100px; margin-left: 30px;">
         <img src='recursos/Solicitudboton.png' class="float-left" onclick="window.location='{{ route("users.create") }}'">
     </div>
-    <div style="margin-top: 180px;">
+    <div style="margin-top: 100px;">
         <img src='recursos/SoliBoton.png' class="mx-auto d-block" onclick="window.location='{{ route("mostraruser") }}'">
-    </div>    
+    </div>
 </form>
 
 

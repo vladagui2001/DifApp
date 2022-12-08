@@ -57,6 +57,7 @@ class DifUserAdminController extends Controller
             $RegUser->Username=$request->input('Username');
             $RegUser->Curp=$request->input('Curp');
             $RegUser->FechaNac=$request['FechaNac'];
+            $RegUser->Password=$request['Password'];
             $RegUser->Genero=$request['Genero'];
 
             //Imagen

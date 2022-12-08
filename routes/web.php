@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('login');
 });
 Route::resource("Users","DifUserController");
 Route::resource("RegUser","DifUserAdminController");
 Route::resource("difEncuesta","DifEncController");
 
+//Rutas de Administrador
 //Rutas de User
 Route::get("Users/create","DifUserController@create");
 Route::get('Users/delete/{id}','DifUserController@destroy');
@@ -35,7 +36,7 @@ Route::get("difEncuesta/create","DifEncController@create");
 Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'mostraruser'));
 Route::get('Users/create', array('uses' =>'DifUserController@create', 'as' => 'users.create'));
 Route::get('RegUsmostrar', array('uses' =>'DifUserAdminController@mostrar', 'as' => 'mostrarReguser'));
-Route::get('/', array('uses' =>'DifUserController@index', 'as' => '/'));
+Route::get('/', array('uses' =>'HomeController@index', 'as' => '/'));
 Route::get('difEncuesta/create', array('uses' =>'DifEncController@create', 'as' => 'EncuestaDif'));
 Route::get('difEncuesta/show', array('uses' =>'DifEncController@show', 'as' => 'ResEncuestaDif'));
 Auth::routes();
@@ -46,10 +47,13 @@ Route::get('UserDownload','DifUserAdminController@pdf')->name('ListadoUsuarios.p
 //Añadido el 09-11-22
 Route::get('EncuestasDownload','DifEncController@pdf')->name('ListadoEncuestas.pdf');
 
+//Rutas de usuarios
+Route::get("User","UserNormalController@index")->name('usernormal');
+Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'mostraruser'));
 
-
-
-
+//Algolia
+Route::resource('/search', 'ApiSearchController');
+Route::get('/search1',['uses' => 'ApiSearchController@search','as' => 'search']);
 
 
 
