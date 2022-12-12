@@ -39,6 +39,7 @@ Route::get('RegUsmostrar', array('uses' =>'DifUserAdminController@mostrar', 'as'
 Route::get('/', array('uses' =>'HomeController@index', 'as' => '/'));
 Route::get('difEncuesta/create', array('uses' =>'DifEncController@create', 'as' => 'EncuestaDif'));
 Route::get('difEncuesta/show', array('uses' =>'DifEncController@show', 'as' => 'ResEncuestaDif'));
+Auth::routes();
 
 //Añadido el 09-11-22
 Route::get('UserDownload','DifUserAdminController@pdf')->name('ListadoUsuarios.pdf');
@@ -53,7 +54,7 @@ Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'm
 //Algolia
 Route::resource('/search', 'ApiSearchController');
 Route::get('/search1',['uses' => 'ApiSearchController@search','as' => 'search']);
-Auth::routes();
+
 
 
 
