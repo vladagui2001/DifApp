@@ -34,17 +34,6 @@ class AddPregunta1ToDifencuestasTable extends Migration
      */
     public function down()
     {
-        Schema::table('difencuestas', function (Blueprint $table) {
-            $table->dropColumn('Nombre');
-            $table->dropColumn('Pregunta1');
-            $table->dropColumn('Pregunta2');
-            $table->dropColumn('Pregunta3');
-            $table->dropColumn('Pregunta4');
-            $table->dropColumn('Pregunta5');
-            $table->dropColumn('Pregunta6');
-            $table->dropColumn('Pregunta7');
-            $table->dropColumn('Pregunta8');
-            //
-        });
+        Schema::dropIfExists('difencuestas');
     }
 }
