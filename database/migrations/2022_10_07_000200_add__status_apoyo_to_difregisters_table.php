@@ -14,7 +14,7 @@ class AddStatusApoyoToDifregistersTable extends Migration
     public function up()
     {
         Schema::table('difregisters', function (Blueprint $table) {
-            $table->string('Status', 10);
+            $table->string('Status', 10)->nullable();
             //
         });
     }

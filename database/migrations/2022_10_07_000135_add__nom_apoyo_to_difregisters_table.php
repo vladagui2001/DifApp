@@ -14,7 +14,7 @@ class AddNomApoyoToDifregistersTable extends Migration
     public function up()
     {
         Schema::table('difregisters', function (Blueprint $table) {
-            $table->string('Nom_Apoyo', 30);
+            $table->string('Nom_Apoyo', 30)->nullable();
             //
         });
     }

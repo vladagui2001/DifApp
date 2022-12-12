@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPregunta1ToDifencuestasTable extends Migration
+class CreateDifencuestasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,6 @@ class AddPregunta1ToDifencuestasTable extends Migration
     public function up()
     {
         Schema::create('difencuestas', function (Blueprint $table) {
-            //
             $table->string('Nombre',50);
             $table->string('Pregunta1',2);
             $table->string('Pregunta2',2);
