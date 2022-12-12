@@ -13,7 +13,7 @@ class AddPregunta1ToDifencuestasTable extends Migration
      */
     public function up()
     {
-        Schema::table('difencuestas', function (Blueprint $table) {
+        Schema::create('difencuestas', function (Blueprint $table) {
             //
             $table->string('Nombre',50);
             $table->string('Pregunta1',2);
