@@ -22,15 +22,12 @@ Route::resource("difEncuesta","DifEncController");
 
 //Rutas de Administrador
 //Rutas de User
-Route::get("Users/create","DifUserController@create");
 Route::get('Users/delete/{id}','DifUserController@destroy');
 
 //Rutas de RegUser
 Route::get("RegUser/create","DifUserAdminController@create");
 Route::get('RegUser/delete/{id}','DifUserAdminController@destroy');
 
-//Rutas de EncuestasUser
-Route::get("difEncuesta/create","DifEncController@create");
 
 //Añadido el 06-11-22
 Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'mostraruser'));
@@ -45,10 +42,6 @@ Route::get('UserDownload','DifUserAdminController@pdf')->name('ListadoUsuarios.p
 
 //Añadido el 09-11-22
 Route::get('EncuestasDownload','DifEncController@pdf')->name('ListadoEncuestas.pdf');
-
-//Rutas de usuarios
-Route::get("User","UserNormalController@index")->name('usernormal');
-Route::get('mostraruser', array('uses' =>'DifUserController@mostrar', 'as' => 'mostraruser'));
 
 //Algolia
 Route::resource('/search', 'ApiSearchController');
