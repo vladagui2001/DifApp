@@ -35,7 +35,7 @@ Route::get('Users/create', array('uses' =>'DifUserController@create', 'as' => 'u
 Route::get('RegUsmostrar', array('uses' =>'DifUserAdminController@mostrar', 'as' => 'mostrarReguser'));
 Route::get('/', array('uses' =>'HomeController@index', 'as' => '/'));
 Route::get('difEncuesta/create', array('uses' =>'DifEncController@create', 'as' => 'EncuestaDif'));
-Route::get('difEncuesta/show', array('uses' =>'DifEncController@show', 'as' => 'ResEncuestaDif'));
+Route::get('difEncuesta/show', array('uses' =>'DifEncController@index', 'as' => 'EncuestaDif.show'));
 
 //Añadido el 09-11-22
 Route::get('UserDownload','DifUserAdminController@pdf')->name('ListadoUsuarios.pdf');

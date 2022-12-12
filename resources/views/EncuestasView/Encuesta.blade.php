@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- <script src="C:/xampp/htdocs/ProjectoRealDifApp/DifApp/resources/js/create.js"></script> -->
-<form class="form-group" method="POST" action="/difEncuesta" enctype="multipart/form-data">
+<form class="form-group" method="POST" action="/Users" enctype="multipart/form-data">
     @csrf
         <div clas='form-group'>
             <label for=''>Nombre del encuestador</label>

@@ -9,7 +9,7 @@
 <form method="POST" enctype="multipart/form-data">
     @csrf
     <div style="margin-top: 180px; margin-right: 80px;">
-        <img src='recursos/Estatusboton.png' class="float-right" onclick="window.location='{{ route("ResEncuestaDif") }}'">
+        <img src='recursos/Estatusboton.png' class="float-right" onclick="window.location='{{ route("EncuestaDif.show") }}'">
     </div>
     <div style="margin-top: 180px; margin-left: 80px;">
         <img src='recursos/Solicitudboton.png' class="float-left" onclick="window.location='{{ route("users.create") }}'">
