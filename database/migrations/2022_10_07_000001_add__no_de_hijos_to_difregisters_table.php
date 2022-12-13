@@ -14,7 +14,7 @@ class AddNoDeHijosToDifregistersTable extends Migration
     public function up()
     {
         Schema::table('difregisters', function (Blueprint $table) {
-            $table->integer('NoDeHijos',2);
+            $table->string('NoDeHijos',2);
             //
         });
     }

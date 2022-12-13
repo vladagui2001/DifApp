@@ -14,7 +14,7 @@ class AddIngMenToDifregistersTable extends Migration
     public function up()
     {
         Schema::table('difregisters', function (Blueprint $table) {
-            $table->integer('Ing_Men',6);
+            $table->string('Ing_Men',6);
             //
         });
     }
