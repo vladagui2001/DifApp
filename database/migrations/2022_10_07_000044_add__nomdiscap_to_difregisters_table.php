@@ -14,7 +14,7 @@ class AddNomdiscapToDifregistersTable extends Migration
     public function up()
     {
         Schema::table('difregisters', function (Blueprint $table) {
-            $table->string('Nomdiscap', 50)->nullable;
+            $table->string('Nomdiscap', 50)->nullable();
             //
         });
     }
