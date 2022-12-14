@@ -11,7 +11,10 @@
 @endif
 
     @csrf
-    <h2 style="margin-left: 20px;"> Cómo sugerencia, puede presionar Ctrl + F para buscar a un usuario en específico </h2>
+    <form action="/search1" method="get">
+        <input type="text"  name="text" placeholder=""/>
+        <button type="submit">Buscar</button>
+    </form>
     <div class="row">
         @foreach ($User as $Difregister)
         <div class="col-sm">
